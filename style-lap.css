@@ -173,9 +173,9 @@
     font-size: 14px;
     width: fit-content;
   }
-  .hidden {
+  /* .hidden {
     display: none;
-  }
+  } */
   .nav-items {
     font-size: 14px;
     display: block;
