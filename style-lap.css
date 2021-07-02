@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
   body {
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .logo {
     margin: 13px 0;
@@ -57,7 +57,7 @@
 /* *********************************************** */
 @media screen and (max-width: 900px) {
   body {
-    background-color: coral;
+    /* background-color: coral; */
   }
   .nav-holder {
     padding: 41px 11px;
@@ -167,7 +167,7 @@
 }
 @media screen and (max-width: 650px) {
   body {
-    background-color: turquoise;
+    /* background-color: turquoise; */
   }
   .logo {
     font-size: 14px;
@@ -199,14 +199,42 @@
   .new-for-tab {
     display: none;
   }
+  .new__mobi-border {
+    border-left: 4px dotted #e8edf2;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
   .new-content {
-    margin: 40px 0;
+    margin: 80px 0;
     display: block;
     width: 100%;
+    background-color: #ffffff;
+  }
+  .new__circle {
+    padding: 35px;
+    font-size: 20px;
+  }
+  .new__circle2 {
+    margin-bottom: 15px;
+  }
+  .new-first-item > p {
+    padding-top: 0;
+  }
+  .new__circle-title {
+    margin: 0 0 0 0;
+    font-size: 18px;
+  }
+  .new__ciccl-desc {
+    font-size: 14px;
+    margin-top: 10px;
   }
   .new-for-mobi {
     display: block;
-    text-align: center;
+    position: relative;
   }
   .section1 {
     padding: 80px 0 55px 0;
@@ -254,8 +282,13 @@
   .card__holder {
     margin-top: 75px;
   }
+  .card__holder > :first-child {
+    margin: 0 auto 60px auto;
+  }
   .card {
     width: 320px;
+    display: block;
+    margin: 0 auto;
   }
   .card__hero {
     padding: 30px 0 20px 0;
