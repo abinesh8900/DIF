@@ -27,6 +27,11 @@ body {
 a {
   text-decoration: none;
 }
+button {
+  border: 0;
+  border-color: transparent;
+  outline: 0;
+}
 ol,
 li {
   list-style: none;
