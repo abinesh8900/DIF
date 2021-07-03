@@ -27,11 +27,7 @@ body {
 a {
   text-decoration: none;
 }
-button {
-  border: 0;
-  border-color: transparent;
-  outline: 0;
-}
+
 ol,
 li {
   list-style: none;
@@ -119,7 +115,7 @@ li {
       #071a2e -40%,
       rgba(24, 79, 136, 0.3)
     ),
-    url(img/hero-4@2x.png);
+    url(img/hero-4.png);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -278,7 +274,7 @@ li {
       #071a2e -40%,
       rgba(24, 79, 136, 0.3)
     ),
-    url(img/hero-4@2x.png);
+    url(img/hero-4.png);
   height: 645px;
   background-position: center;
   background-size: cover;
@@ -305,6 +301,7 @@ li {
   font-weight: normal;
 }
 .banner__navigation {
+  border-radius: 4px;
   display: inline-block;
   font-size: var(--fs-20);
   font-weight: 500;
@@ -802,6 +799,7 @@ li {
   }
   .banner {
     width: 260px;
+    padding-left: unset;
   }
   .banner__right {
     position: absolute;
