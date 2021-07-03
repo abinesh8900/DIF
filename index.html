@@ -15,20 +15,29 @@
   </head>
   <body>
     <header class="nav-holder clearfix">
-      <div class="wapper">
+      <div class="container">
         <a class="logo" href="javascript:void(0)"> YOU DIF </a>
-        <nav class="navbar hidden">
+        <button
+          class="menu-icon float-r fas fa-bars"
+          id="toggle-menu"
+          type="button"
+        >
+          <span class="menu-bar bar-one"></span>
+          <span class="menu-bar bar-one"></span>
+          <span class="menu-bar bar-one"></span>
+        </button>
+        <nav class="navbar float-r hidden">
           <a class="nav-items" href="javascript:void(0)">QUI SOMMES-NOUS</a>
           <a class="nav-items" href="javascript:void(0)">CONTACT</a>
-          <button type="button" class="nav-btn">CONNEXION</button>
+          <a href="javascript:void(0)" class="nav-btn">CONNEXION</a>
         </nav>
       </div>
     </header>
     <section class="hero1__bg">
       <div class="hero1 container">
-        <p class="hero1__desc">
+        <h1 class="hero1__desc">
           Lorem Ipsum, <br />is simply dummy text of the printing.
-        </p>
+        </h1>
         <button type="button" class="hero1__btn">DIFFUSER MON ANNONCE</button>
       </div>
     </section>
@@ -42,7 +51,7 @@
       </header>
       <div class="section1__new-holder">
         <div class="new-conten-holder new-conten-holder1 clearfix">
-          <div class="new-content new-first-item fl">
+          <div class="new-content new-first-item float-l">
             <p class="new__circle-title new__circle-title--active">
               Bien disponible
             </p>
@@ -55,7 +64,7 @@
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
             <span class="new__circle new__circle1 fal fa-file-alt"></span>
           </div>
-          <div class="new-content fr">
+          <div class="new-content float-r">
             <p class="new__circle-title">Vérification</p>
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
             <span class="new__circle new__circle1 fal fa-check-square"></span>
@@ -70,7 +79,7 @@
         </div>
 
         <div class="new-conten-holder new-conten-holder2 clearfix">
-          <div class="new-content fl">
+          <div class="new-content float-l">
             <span class="new__circle new__circle2 fal fa-arrows"></span>
             <p class="new__circle-title">Multidiffusion</p>
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
@@ -80,7 +89,7 @@
             <p class="new__circle-title">Suivi & Gestion</p>
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
-          <div class="new-content fr">
+          <div class="new-content float-r">
             <span
               class="
                 new__circle new__circle2 new__circle-blue
@@ -97,7 +106,7 @@
       <!-- for tab -->
       <div class="new-for-tab">
         <div class="new-content__row new-content__row1 clearfix">
-          <div class="new-content new-first-item fl">
+          <div class="new-content new-first-item float-l">
             <p class="new__circle-title new__circle-title--active">
               Bien disponible
             </p>
@@ -105,7 +114,7 @@
               class="new__circle new__circle1 new__circle-blue fal fa-building"
             ></span>
           </div>
-          <div class="new-content fr">
+          <div class="new-content float-r">
             <p class="new__circle-title">Saisie d’annonces</p>
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
             <span class="new__circle new__circle1 fal fa-file-alt"></span>
@@ -113,12 +122,12 @@
         </div>
 
         <div class="new-content__row new-content__row2 clearfix">
-          <div class="new-content fl">
+          <div class="new-content float-l">
             <p class="new__circle-title">Vérification</p>
             <span class="new__circle new__circle fal fa-check-square"></span>
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
-          <div class="new-content fr">
+          <div class="new-content float-r">
             <p class="new__circle-title">Multidiffusion</p>
             <span class="new__circle new__circle fal fa-arrows"></span>
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
@@ -126,12 +135,12 @@
         </div>
 
         <div class="new-content__row new-content__row3 clearfix">
-          <div class="new-content fl">
+          <div class="new-content float-l">
             <span class="new__circle new__circle2 fal fa-file-chart-pie"></span>
             <p class="new__circle-title">Suivi & Gestion</p>
             <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
-          <div class="new-content fr">
+          <div class="new-content float-r">
             <span
               class="
                 new__circle new__circle2 new__circle-blue
@@ -209,7 +218,7 @@
     </section>
     <section class="hero2__holder">
       <div class="hero2__bg">
-        <div class="wapper">
+        <div class="container">
           <div class="hero2">
             <p class="hero2__desc">
               <span>L’efficacité </span>au centre de notre préoccupation
@@ -326,7 +335,7 @@
         <div class="card2__container">
           <div class="card2">
             <div class="card2__circle-holder">
-              <span class="card2__circle far fa-piggy-bank"></span>
+              <span class="card2__circle fal fa-piggy-bank"></span>
               <button
                 class="
                   card2__ciccle-btn
@@ -347,7 +356,7 @@
         <div class="card2__container">
           <div class="card2">
             <div class="card2__circle-holder">
-              <span class="card2__circle far fa-file-invoice"></span>
+              <span class="card2__circle fal fa-file-invoice"></span>
             </div>
             <p class="card2__title">Maîtrise</p>
             <p class="card2__desc">
@@ -359,7 +368,7 @@
         <div class="card2__container">
           <div class="card2">
             <div class="card2__circle-holder">
-              <span class="card2__circle far fa-coins"></span>
+              <span class="card2__circle fal fa-coins"></span>
               <button
                 class="
                   card2__ciccle-btn
@@ -379,9 +388,9 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="wapper clearfix">
+      <div class="container clearfix">
         <a href="javascript:void(0)" class="footer__logo">YOU DIF</a>
-        <div class="footer__item-holder fr">
+        <div class="footer__item-holder float-r">
           <div class="col">
             <a class="footer__item" href="javascript:void(0)"
               >QUI SOMMES-NOUS ?</a
@@ -405,5 +414,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
