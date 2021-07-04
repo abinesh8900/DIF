@@ -19,10 +19,6 @@ body {
   --fs-16: 16px;
   --fs-18: 18px;
   --fs-20: 20px;
-
-  --inline-block: inline-block;
-  --block: block;
-  --none: none;
 }
 a {
   text-decoration: none;
