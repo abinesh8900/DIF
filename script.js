@@ -1,4 +1,5 @@
 const toggleMenu = document.querySelector("#toggle-menu");
+console.log(toggleMenu);
 const navBar = document.querySelector(".hidden");
 const removeHeroContent = document.querySelector(".hero");
 const headerMobi = document.querySelector(".nav-holder");

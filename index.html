@@ -11,21 +11,23 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
     <title>DIF</title>
   </head>
   <body>
-    <header class="nav-holder clearfix">
-      <div class="container">
+    <header class="nav-holder">
+      <div class="container clearfix">
         <a class="logo" href="javascript:void(0)">YOU DIF</a>
         <button
           class="menu-icon float-r fas fa-bars"
           id="toggle-menu"
           type="button"
-        >
-          <span class="menu-bar bar-one"></span>
-          <span class="menu-bar bar-one"></span>
-          <span class="menu-bar bar-one"></span>
-        </button>
+        ></button>
         <nav class="navbar float-r hidden">
           <a class="nav-items" href="javascript:void(0)">QUI SOMMES-NOUS</a>
           <a class="nav-items" href="javascript:void(0)">CONTACT</a>
@@ -41,114 +43,130 @@
         <button type="button" class="hero__btn">DIFFUSER MON ANNONCE</button>
       </div>
     </section>
-    <section class="section1 container">
-      <header class="section1__header">
-        <p class="section__title">Notre interface tout en un, 100% web</p>
+    <section class="circles-warp container">
+      <article class="circles-warp__header">
+        <h2 class="section__title">Notre interface tout en un, 100% web</h2>
         <p class="section__desc">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form.
         </p>
-      </header>
-      <div class="section1__new-holder">
-        <div class="new-conten-holder new-conten-holder1 clearfix">
-          <div class="new-content new-first-item float-l">
-            <p class="new__circle-title new__circle-title--active">
+      </article>
+      <div class="circles-warp__steps-holder">
+        <div class="steps-conten-holder steps-conten-holder1 clearfix">
+          <div class="steps-content steps-first-item float-l">
+            <p class="steps__circle-title steps__circle-title--active">
               Bien disponible
             </p>
             <span
-              class="new__circle new__circle1 new__circle-blue fal fa-building"
+              class="
+                steps__circle steps__circle1 steps__circle-blue
+                fal
+                fa-building
+              "
             ></span>
           </div>
-          <div class="new-content">
-            <p class="new__circle-title">Saisie d’annonces</p>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
-            <span class="new__circle new__circle1 fal fa-file-alt"></span>
+          <div class="steps-content">
+            <p class="steps__circle-title">Saisie d’annonces</p>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+            <span class="steps__circle steps__circle1 fal fa-file-alt"></span>
           </div>
-          <div class="new-content float-r">
-            <p class="new__circle-title">Vérification</p>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
-            <span class="new__circle new__circle1 fal fa-check-square"></span>
+          <div class="steps-content float-r">
+            <p class="steps__circle-title">Vérification</p>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+            <span
+              class="steps__circle steps__circle1 fal fa-check-square"
+            ></span>
           </div>
         </div>
         <div class="border-holder">
-          <div class="new-border-line new-border__top-bottom;"></div>
-          <div class="new-border-line new-border__center"></div>
-          <div class="new-border-line new-border__bottom"></div>
-          <div class="new-border new-border-right"></div>
-          <div class="new-border new-border-left"></div>
+          <div class="steps-border-line steps-border__top-bottom;"></div>
+          <div class="steps-border-line steps-border__center"></div>
+          <div class="steps-border-line steps-border__bottom"></div>
+          <div class="steps-border steps-border-right"></div>
+          <div class="steps-border steps-border-left"></div>
         </div>
 
-        <div class="new-conten-holder new-conten-holder2 clearfix">
-          <div class="new-content float-l">
-            <span class="new__circle new__circle2 fal fa-arrows"></span>
-            <p class="new__circle-title">Multidiffusion</p>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+        <div class="steps-conten-holder steps-conten-holder2 clearfix">
+          <div class="steps-content float-l">
+            <span class="steps__circle steps__circle2 fal fa-arrows"></span>
+            <p class="steps__circle-title">Multidiffusion</p>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
-          <div class="new-content">
-            <span class="new__circle new__circle2 fal fa-file-chart-pie"></span>
-            <p class="new__circle-title">Suivi & Gestion</p>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+          <div class="steps-content">
+            <span
+              class="steps__circle steps__circle2 fal fa-file-chart-pie"
+            ></span>
+            <p class="steps__circle-title">Suivi & Gestion</p>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
-          <div class="new-content float-r">
+          <div class="steps-content float-r">
             <span
               class="
-                new__circle new__circle2 new__circle-blue
+                steps__circle steps__circle2 steps__circle-blue
                 fal
                 fa-user-circle
               "
             ></span>
-            <p class="new__circle-title new__circle-title--active">
+            <p class="steps__circle-title steps__circle-title--active">
               Nouveaux contacts.
             </p>
           </div>
         </div>
       </div>
       <!-- for tab -->
-      <div class="new-for-tab">
-        <div class="new-content__row new-content__row1 clearfix">
-          <div class="new-content new-first-item float-l">
-            <p class="new__circle-title new__circle-title--active">
+      <div class="steps-for-tab">
+        <div class="steps-content__row steps-content__row1 clearfix">
+          <div class="steps-content steps-first-item float-l">
+            <p class="steps__circle-title steps__circle-title--active">
               Bien disponible
             </p>
             <span
-              class="new__circle new__circle1 new__circle-blue fal fa-building"
+              class="
+                steps__circle steps__circle1 steps__circle-blue
+                fal
+                fa-building
+              "
             ></span>
           </div>
-          <div class="new-content float-r">
-            <p class="new__circle-title">Saisie d’annonces</p>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
-            <span class="new__circle new__circle1 fal fa-file-alt"></span>
+          <div class="steps-content float-r">
+            <p class="steps__circle-title">Saisie d’annonces</p>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+            <span class="steps__circle steps__circle1 fal fa-file-alt"></span>
           </div>
         </div>
 
-        <div class="new-content__row new-content__row2 clearfix">
-          <div class="new-content float-l">
-            <p class="new__circle-title">Vérification</p>
-            <span class="new__circle new__circle fal fa-check-square"></span>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+        <div class="steps-content__row steps-content__row2 clearfix">
+          <div class="steps-content float-l">
+            <p class="steps__circle-title">Vérification</p>
+            <span
+              class="steps__circle steps__circle fal fa-check-square"
+            ></span>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
-          <div class="new-content float-r">
-            <p class="new__circle-title">Multidiffusion</p>
-            <span class="new__circle new__circle fal fa-arrows"></span>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+          <div class="steps-content float-r">
+            <p class="steps__circle-title">Multidiffusion</p>
+            <span class="steps__circle steps__circle fal fa-arrows"></span>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
         </div>
 
-        <div class="new-content__row new-content__row3 clearfix">
-          <div class="new-content float-l">
-            <span class="new__circle new__circle2 fal fa-file-chart-pie"></span>
-            <p class="new__circle-title">Suivi & Gestion</p>
-            <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+        <div class="steps-content__row steps-content__row3 clearfix">
+          <div class="steps-content float-l">
+            <span
+              class="steps__circle steps__circle2 fal fa-file-chart-pie"
+            ></span>
+            <p class="steps__circle-title">Suivi & Gestion</p>
+            <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
           </div>
-          <div class="new-content float-r">
+          <div class="steps-content float-r">
             <span
               class="
-                new__circle new__circle2 new__circle-blue
+                steps__circle steps__circle2 steps__circle-blue
                 fal
                 fa-user-circle
               "
             ></span>
-            <p class="new__circle-title new__circle-title--active">
+            <p class="steps__circle-title steps__circle-title--active">
               Nouveaux contacts.
             </p>
           </div>
@@ -156,61 +174,71 @@
 
         <div class="border__container">
           <div class="border-holder border-holder1">
-            <div class="new-border-line new-border__top-bottom;"></div>
-            <div class="new-border-line new-border__center"></div>
-            <div class="new-border-line new-border__bottom"></div>
-            <div class="new-border new-border-right"></div>
-            <div class="new-border new-border-left"></div>
+            <div class="steps-border-line steps-border__top-bottom;"></div>
+            <div class="steps-border-line steps-border__center"></div>
+            <div class="steps-border-line steps-border__bottom"></div>
+            <div class="steps-border steps-border-right"></div>
+            <div class="steps-border steps-border-left"></div>
           </div>
           <div class="border-holder border-holder2">
-            <div class="new-border-line new-border__top-bottom;"></div>
-            <div class="new-border-line new-border__center"></div>
-            <div class="new-border-line new-border__bottom"></div>
-            <div class="new-border new-border-right"></div>
-            <div class="new-border new-border-left"></div>
+            <div class="steps-border-line steps-border__top-bottom;"></div>
+            <div class="steps-border-line steps-border__center"></div>
+            <div class="steps-border-line steps-border__bottom"></div>
+            <div class="steps-border steps-border-right"></div>
+            <div class="steps-border steps-border-left"></div>
           </div>
         </div>
       </div>
-      <!-- new of mobi -->
-      <div class="new-for-mobi">
-        <div class="new-content new-first-item">
+      <!-- steps of mobi -->
+      <div class="steps-for-mobi">
+        <div class="steps-content steps-first-item">
           <span
-            class="new__circle new__circle2 new__circle-blue fal fa-building"
+            class="
+              steps__circle steps__circle2 steps__circle-blue
+              fal
+              fa-building
+            "
           ></span>
-          <p class="new__circle-title new__circle-title--active">
+          <p class="steps__circle-title steps__circle-title--active">
             Bien disponible
           </p>
         </div>
-        <div class="new__mobi-border"></div>
-        <div class="new-content">
-          <span class="new__circle new__circle2 fal fa-file-alt"></span>
-          <p class="new__circle-title">Saisie d’annonces</p>
-          <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+        <div class="steps__mobi-border"></div>
+        <div class="steps-content">
+          <span class="steps__circle steps__circle2 fal fa-file-alt"></span>
+          <p class="steps__circle-title">Saisie d’annonces</p>
+          <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
         </div>
 
-        <div class="new-content">
-          <span class="new__circle new__circle2 fal fa-check-square"></span>
-          <p class="new__circle-title">Vérification</p>
-          <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+        <div class="steps-content">
+          <span class="steps__circle steps__circle2 fal fa-check-square"></span>
+          <p class="steps__circle-title">Vérification</p>
+          <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
         </div>
 
-        <div class="new-content">
-          <span class="new__circle new__circle2 fal fa-arrows"></span>
-          <p class="new__circle-title">Multidiffusion</p>
-          <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+        <div class="steps-content">
+          <span class="steps__circle steps__circle2 fal fa-arrows"></span>
+          <p class="steps__circle-title">Multidiffusion</p>
+          <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
         </div>
 
-        <div class="new-content">
-          <span class="new__circle new__circle2 fal fa-file-chart-pie"></span>
-          <p class="new__circle-title">Suivi & Gestion</p>
-          <p class="new__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
-        </div>
-
-        <div class="new-content">
+        <div class="steps-content">
           <span
-            class="new__circle new__circle2 new__circle-blue fal fa-user-circle"
+            class="steps__circle steps__circle2 fal fa-file-chart-pie"
           ></span>
-          <p class="new__circle-title new__circle-title--active">
+          <p class="steps__circle-title">Suivi & Gestion</p>
+          <p class="steps__ciccl-desc">Lorem Ipsum is simply dummy text.</p>
+        </div>
+
+        <div class="steps-content">
+          <span
+            class="
+              steps__circle steps__circle2 steps__circle-blue
+              fal
+              fa-user-circle
+            "
+          ></span>
+          <p class="steps__circle-title steps__circle-title--active">
             Nouveaux contacts.
           </p>
         </div>
@@ -220,9 +248,9 @@
       <div class="banner__bg">
         <div class="container">
           <div class="banner">
-            <p class="banner__desc">
+            <h2 class="banner__desc">
               <span>L’efficacité </span>au centre de notre préoccupation
-            </p>
+            </h2>
             <a class="banner__navigation" href="javascript:void(0)"
               >DIFFUSER MON ANNONCE</a
             >
@@ -230,37 +258,37 @@
         </div>
       </div>
       <div class="banner__right">
-        <div class="banner__card">
-          <p class="banner__card--title">Simple</p>
+        <article class="banner__card">
+          <h3 class="banner__card--title">Simple</h3>
           <p class="banner__card--desc">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-        </div>
-        <div class="banner__card mtb-20">
-          <p class="banner__card--title">Sur-mesure</p>
+        </article>
+        <article class="banner__card mtb-20">
+          <h3 class="banner__card--title">Sur-mesure</h3>
           <p class="banner__card--desc">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-        </div>
-        <div class="banner__card">
-          <p class="banner__card--title">Performant</p>
+        </article>
+        <article class="banner__card">
+          <h3 class="banner__card--title">Performant</h3>
           <p class="banner__card--desc">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-        </div>
+        </article>
       </div>
     </section>
     <section class="card-container">
-      <header class="card-container__header">
-        <p class="section__title">Une totale maîtrise de votre budget</p>
+      <article class="card-container__header">
+        <h2 class="section__title">Une totale maîtrise de votre budget</h2>
         <p class="section__desc">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration.
         </p>
-      </header>
+      </article>
       <div class="card__holder">
         <div class="card">
           <div class="card__hero primary-bg-color primary-box-shadow">
