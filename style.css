@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 :root {
+  /* color */
   --white: #ffffff;
   --blue: #1e88f5;
   --yellow: #ffcc01;
@@ -15,6 +16,7 @@ body {
   --border-color: #e8edf2;
   --circle-color: #f4f8fc;
 
+  /* font-size */
   --fs-14: 14px;
   --fs-16: 16px;
   --fs-18: 18px;
